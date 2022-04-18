@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   speed: 300,
-  // autoplay: true,
+  autoplay: true,
   loop: true,
 
   pagination: {

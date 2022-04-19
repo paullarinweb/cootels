@@ -20,8 +20,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="./sal/sal.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../node_modules/sal.js/dist/sal.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -40,8 +40,10 @@
         <h2 class="header__logo"><a href="#">Cootels</a></h2>
         <nav>
           <ul class="header__nav">
-            <li><a href="#Rooms">Rooms</a></li>
-            <li><a href="#Reservation">Reservation</a></li>
+            <li class="header__nav_li"><a href="#Rooms">Rooms</a></li>
+            <li class="header__nav_li">
+              <a href="#Reservation">Reservation</a>
+            </li>
             <li><a href="#Contacs">Contacs</a></li>
           </ul>
         </nav>
@@ -74,7 +76,7 @@
               data-sal="slide-down"
               data-sal-delay="300"
               data-sal-easing="ease-out-bounce"
-              class="intro__card__item"
+              class="intro__card__item mr-6"
             >
               <img src="./img/intro-1.jpg" alt="house-1-block" />
             </div>
@@ -83,7 +85,7 @@
               data-sal="fade"
               data-sal-delay="300"
               data-sal-easing="ease-out-bounce"
-              class="intro__card__item mt-[81px]"
+              class="intro__card__item mt-[55px] sm:mt-[81px] mr-6"
             >
               <img src="./img/intro-2.jpg" alt="house-1-block" />
             </div>
@@ -559,8 +561,8 @@
           <p class="text lg:max-w-[190px]">
             Your Best Private Hideway From Crowd. Back to Nature.
           </p>
-          <div class="footer__social flex items-center gap-6 mt-10">
-            <a href="#" class="footer__social__item">
+          <div class="footer__social flex items-center mt-10">
+            <a href="#" class="footer__social__item mr-6">
               <svg
                 width="32"
                 height="26"
@@ -573,7 +575,7 @@
                 />
               </svg>
             </a>
-            <a href="#" class="footer__social__item">
+            <a href="#" class="footer__social__item mr-6">
               <svg
                 width="32"
                 height="32"
@@ -662,7 +664,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./sal/sal.js"></script>
+    <script src="../node_modules/sal.js/dist/sal.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/animation.js"></script>
   </body>

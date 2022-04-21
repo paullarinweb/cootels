@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  speed: 300,
-  // autoplay: true,
+  speed: 800,
+  autoplay: true,
   loop: true,
 
   pagination: {
@@ -22,5 +22,20 @@ for (i = 0; i < acc.length; i++) {
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
+  });
+}
+
+// links scroll
+const anchors = document.querySelectorAll('a[href*="#"]');
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute("href").substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   });
 }

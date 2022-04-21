@@ -907,6 +907,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -917,6 +921,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-3 {
   height: 0.75rem;
+}
+
+.h-\[120\] {
+  height: 120;
+}
+
+.h-\[120px\] {
+  height: 120px;
 }
 
 .w-full {
@@ -935,6 +947,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-3 {
   width: 0.75rem;
+}
+
+.w-\[120px\] {
+  width: 120px;
 }
 
 .max-w-\[1224px\] {
@@ -1021,6 +1037,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#FFECE2\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 236 226 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2 {
@@ -1407,6 +1428,10 @@ body {
 
   .lg\:mr-4 {
     margin-right: 1rem;
+  }
+
+  .lg\:mr-6 {
+    margin-right: 1.5rem;
   }
 
   .lg\:min-h-\[596px\] {

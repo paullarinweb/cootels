@@ -20,7 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="sal/sal.css" />
     <link
       rel="stylesheet"
@@ -29,6 +29,14 @@
     <title>Cootels - Nature, Warmth, and Beauty in One Space</title>
   </head>
   <body class="font-inter">
+    <!-- loader -->
+    <div class="loader">
+      <p>loading in process...</p>
+      <div class="dots-bars-6"></div>
+      <span>please, dont leave before this page load!</span>
+    </div>
+
+    <!-- wrapper -->
     <div class="wrapper max-w-[1224px] m-auto px-3">
       <header
         data-sal-duration="1200"
@@ -40,16 +48,16 @@
         <h2 class="header__logo"><a href="#">Cootels</a></h2>
         <nav>
           <ul class="header__nav">
-            <li class="header__nav_li"><a href="rooms.html">Rooms</a></li>
+            <li class="header__nav_li"><a href="./rooms.html">Rooms</a></li>
             <li class="header__nav_li">
-              <a href="reservation.html">Reservation</a>
+              <a href="./reservation.html">Reservation</a>
             </li>
-            <li><a href="contacts.html">Contacs</a></li>
+            <li><a href="#contact__us">Contacs</a></li>
           </ul>
         </nav>
-        <a href="auth.html" class="header__btn btn">Get Started</a>
+        <a href="./auth.html" class="header__btn btn">Get Started</a>
       </header>
-      <main class="main">
+      <main class="main overflow-hidden">
         <section
           class="intro flex flex-wrap xl:flex-nowrap items-center justify-center xl:justify-between min-h-auto xl:min-h-[845px]"
         >
@@ -68,7 +76,7 @@
               back to nature. We provide the best room and nature for you. Come
               visit us anytime you want.
             </p>
-            <a class="btn" href="reservation.html">Reservation</a>
+            <a class="btn" href="./reservation.html">Reservation</a>
           </div>
           <div class="intro__card">
             <div
@@ -148,7 +156,7 @@
               Cootels extends along a private, quiet, and beautiful nature. Stay
               away from crowd and enjoy the cozy and beauty with us.
             </p>
-            <a class="about__btn btn" href="rooms.html">Learn More</a>
+            <a class="about__btn btn" href="./rooms.html">Learn More</a>
           </div>
         </section>
 
@@ -221,7 +229,7 @@
             </p>
             <a
               class="rooms__btn btn w-fit max-w-[200px] my-8"
-              href="rooms.html"
+              href="./rooms.html"
               >Explore more</a
             >
           </div>
@@ -247,7 +255,7 @@
                 Best for a brave lone wolf who need comfort and quiet quality
                 time, but you still have a chance to meet others.
               </p>
-              <a class="link" href="rooms.html"
+              <a class="link" href="./rooms.html"
                 ><p class="inline-block mr-3">Learn more</p>
                 <svg
                   width="18"
@@ -283,7 +291,7 @@
                 Best for couple, seek happiness in intimacy without worry of
                 being disturbed. Feel the whole world just for you two
               </p>
-              <a class="link" href="rooms.html"
+              <a class="link" href="./rooms.html"
                 ><p class="inline-block mr-3">Learn more</p>
                 <svg
                   width="18"
@@ -319,7 +327,7 @@
                 Best for family or group. One cootage can fit up to 5 people.
                 Made stronger bond with your family or friends
               </p>
-              <a class="link" href="rooms.html"
+              <a class="link" href="./rooms.html"
                 ><p class="inline-block mr-3">Learn more</p>
                 <svg
                   width="18"
@@ -361,9 +369,9 @@
               button below and it will take you to our contact point
             </p>
             <div class="answers__info__links">
-              <a href="contacts.html" class="btn btn-info-room">Contact us</a>
+              <a href="#contact__us" class="btn btn-info-room">Contact us</a>
               <a
-                href="rooms.html"
+                href="./rooms.html"
                 class="btn btn-info-room bg-transparent hover:bg-dark-blue-bg hover:text-white hover:border-0 text-dark-blue-bg"
                 >Explore more room</a
               >
@@ -678,10 +686,10 @@
               <a href="#double_room">
                 <li class="my-6">Double Room</li>
               </a>
-              <a href="rooms.html">
+              <a href="./rooms.html">
                 <li class="my-6">Cabin</li>
               </a>
-              <a href="rooms.html">
+              <a href="./rooms.html">
                 <li class="my-6">Custom Room</li>
               </a>
             </ul>
@@ -689,15 +697,15 @@
           <nav class="my-3 sm:m-0 w-full sm:w-auto">
             <h3 class="footer__nav__title">Reservation</h3>
             <ul>
-              <a href="reservation.html">
+              <a href="./reservation.html">
                 <li class="my-6">See the Steps</li>
               </a>
-              <a href="reservation.html">
+              <a href="./reservation.html">
                 <li class="my-6">Best Time</li>
               </a>
             </ul>
           </nav>
-          <nav class="my-3 sm:m-0 w-full sm:w-auto">
+          <nav class="my-3 sm:m-0 w-full sm:w-auto" id="contact__us">
             <h3 class="footer__nav__title">Contact</h3>
             <ul>
               <a href="tel:+79876543210">

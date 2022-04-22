@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="sal/sal.css" />
+
     <meta name="description" content="rooms" />
     <meta name="keywords" content="website" />
     <meta name="image" content="./img/cards-room/cabin.jpg" />
@@ -19,19 +23,31 @@
     <meta name="format-detection" content="address=no" />
     <meta name="msapplication-TileImage" content="./img/" />
     <link rel="preconnect" href="https://fonts.google.com" />
-    <link rel="stylesheet" href="../dist/output.css" />
     <title>Rooms</title>
   </head>
   <body>
-    <div class="wrapper">
-      <h1 class="font-medium text-sm mb-4 text-center">Rooms:</h1>
-      <div class="cabin">Cabin</div>
-      <h2 class="custom__rooms">Custom rooms</h2>
+    <section
+      class="rooms flex flex-col justify-center min-h-full w-full m-2 xl:m-0"
+    >
       <div
-        class="rooms__cards flex flex-wrap justify-center lg:justify-start lg:flex-nowrap"
+        data-sal-duration="700"
+        data-sal="fade"
+        data-sal-easing="ease-out-bounce"
+        class="text-center m-4"
       >
+        <h2 class="rooms__header header mb-6">Many Rooms to Choose</h2>
+        <p class="rooms__text text text-center max-w-[590px] m-auto">
+          There is a room for every needs. We have room for individuals until
+          family size, we also have a cabin for more private experience
+        </p>
+        <a class="rooms__btn btn w-fit max-w-[200px] my-8" href="./rooms.html"
+          >Explore more</a
+        >
+      </div>
+
+      <div class="rooms__cards flex flex-wrap justify-center sm:p-4 m-4">
         <div
-          class="rooms__card"
+          class="rooms__card max-w-[450px] sm:m-4"
           data-sal-duration="700"
           data-sal="fade"
           data-sal-easing="ease-out-bounce"
@@ -50,7 +66,7 @@
           </p>
         </div>
         <div
-          class="rooms__card"
+          class="rooms__card max-w-[450px] sm:m-4"
           data-sal-duration="700"
           data-sal="fade"
           data-sal-easing="ease-out-bounce"
@@ -69,7 +85,7 @@
           </p>
         </div>
         <div
-          class="rooms__card"
+          class="rooms__card max-w-[450px] sm:m-4"
           data-sal-duration="700"
           data-sal="fade"
           data-sal-easing="ease-out-bounce"
@@ -86,17 +102,41 @@
             Best for family or group. One cootage can fit up to 5 people. Made
             stronger bond with your family or friends
           </p>
+        </div>
+        <div
+          class="rooms__card max-w-[450px] sm:m-4"
+          data-sal-duration="700"
+          data-sal="fade"
+          data-sal-easing="ease-out-bounce"
+          id="double_room"
+        >
+          <img
+            class="rooms__card__img"
+            src="./img/cards-room/room-1.jpg"
+            alt="Double room"
+            loading="lazy"
+          />
+          <h3 class="rooms__card__header">Cabin</h3>
           <p class="rooms__card__text text">
-            Best for family or group. One cootage can fit up to 5 people. Made
-            stronger bond with your family or friends
-          </p>
-          <p class="rooms__card__text text">
-            Best for family or group. One cootage can fit up to 5 people. Made
-            stronger bond with your family or friends
+            Best for couple, seek happiness in intimacy without worry of being
+            disturbed. Feel the whole world just for you two
           </p>
         </div>
       </div>
-    </div>
+      <div class="rooms_add flex justify-center items-center m-4">
+        <button class="btn hover:text-dark-blue hover:border-dark-blue">
+          Add Custom room
+        </button>
+      </div>
+    </section>
     <!-- scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="sal/sal.js"></script>
+    <script src="scripts/animation.js"></script>
   </body>
 </html>

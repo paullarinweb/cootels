@@ -39,3 +39,8 @@ for (let anchor of anchors) {
     });
   });
 }
+
+// loader
+window.onload = function () {
+  $(".loader").addClass("remove");
+};

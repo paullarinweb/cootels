@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="reservation" />
-    <meta
-      name="keywords"
-      content="reservation
-reservation"
-    />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="sal/sal.css" />
+    <meta name="keywords" content="reservation" />
     <meta name="image" content="./img/" />
     <meta property="og:type" content="website" />
     <meta
@@ -34,7 +32,95 @@ reservation"
     <title>Reservation</title>
   </head>
   <body>
-    <div id="all_steps" class="steps">Steps</div>
-    <adiv id="best_time" class="best-time">Best Time</adiv>
+    <section
+      class="reservation p-4 h-full w-full flex items-center justify-center"
+    >
+      <div class="reservation__wrapper max-w-[1200px] m-auto">
+        <div class="order">
+          <h1 class="header">Reservation</h1>
+          <div class="order__btn text mb-4">
+            <p>Order: <span data-order="1"></span></p>
+          </div>
+          <div
+            class="rooms__cards mb-4 flex flex-wrap justify-center lg:justify-start lg:flex-nowrap"
+          >
+            <div
+              class="rooms__card lg:mr-6"
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+              id="single_room"
+            >
+              <img
+                class="rooms__card__img rounded"
+                src="./img/cards-room/room-1.jpg"
+                alt="single room"
+                loading="lazy"
+              />
+              <h3 class="rooms__card__header">Single Room</h3>
+              <p class="rooms__card__text text">
+                Best for a brave lone wolf who need comfort and quiet quality
+                time, but you still have a chance to meet others.
+              </p>
+              <button class="btn hover:text-dark-blue hover:border-dark-blue">
+                order
+              </button>
+            </div>
+            <div
+              class="rooms__card lg:mr-6"
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+              id="double_room"
+            >
+              <img
+                class="rooms__card__img"
+                src="./img/cards-room/room-2.jpg"
+                alt="Double room"
+                loading="lazy"
+              />
+              <h3 class="rooms__card__header">Double Room</h3>
+              <p class="rooms__card__text text">
+                Best for couple, seek happiness in intimacy without worry of
+                being disturbed. Feel the whole world just for you two
+              </p>
+              <button class="btn hover:text-dark-blue hover:border-dark-blue">
+                order
+              </button>
+            </div>
+            <div
+              class="rooms__card"
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+              id="cootage"
+            >
+              <img
+                class="rooms__card__img"
+                src="./img/cards-room/room-3.jpg"
+                alt="Cootage"
+                loading="lazy"
+              />
+              <h3 class="rooms__card__header">Cootage</h3>
+              <p class="rooms__card__text text">
+                Best for family or group. One cootage can fit up to 5 people.
+                Made stronger bond with your family or friends
+              </p>
+              <button class="btn hover:text-dark-blue hover:border-dark-blue">
+                order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="sal/sal.js"></script>
+    <script src="scripts/animation.js"></script>
   </body>
 </html>

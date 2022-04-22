@@ -16,7 +16,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="sal/sal.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -24,25 +29,43 @@
     <title>Cootels - Nature, Warmth, and Beauty in One Space</title>
   </head>
   <body class="font-inter">
+    <!-- loader -->
+    <div class="loader">
+      <p>loading in process...</p>
+      <div class="dots-bars-6"></div>
+      <span>please, dont leave before this page load!</span>
+    </div>
+
+    <!-- wrapper -->
     <div class="wrapper max-w-[1224px] m-auto px-3">
       <header
+        data-sal-duration="1200"
+        data-sal="slide-down"
+        data-sal-delay="300"
+        data-sal-easing="ease-out-bounce"
         class="header flex flex-wrap lg:flex-nowrap items-center justify-between py-[38px]"
       >
         <h2 class="header__logo"><a href="#">Cootels</a></h2>
         <nav>
           <ul class="header__nav">
-            <li><a href="#Rooms">Rooms</a></li>
-            <li><a href="#Reservation">Reservation</a></li>
-            <li><a href="#Contacs">Contacs</a></li>
+            <li class="header__nav_li"><a href="./rooms.html">Rooms</a></li>
+            <li class="header__nav_li">
+              <a href="./reservation.html">Reservation</a>
+            </li>
+            <li><a href="#contact__us">Contacs</a></li>
           </ul>
         </nav>
-        <a href="#" class="header__btn btn">Get Started</a>
+        <a href="./auth.html" class="header__btn btn">Get Started</a>
       </header>
-      <main class="main">
+      <main class="main overflow-hidden">
         <section
           class="intro flex flex-wrap xl:flex-nowrap items-center justify-center xl:justify-between min-h-auto xl:min-h-[845px]"
         >
           <div
+            data-sal-duration="1200"
+            data-sal="slide-right"
+            data-sal-delay="300"
+            data-sal-easing="ease-out-bounce"
             class="intro__info max-w-[600px] mt-8 xl:mt-0 order-2 xl:order-1"
           >
             <h1 class="intro__header header">
@@ -53,31 +76,72 @@
               back to nature. We provide the best room and nature for you. Come
               visit us anytime you want.
             </p>
-            <a class="btn" href="#">Reservation</a>
+            <a class="btn" href="./reservation.html">Reservation</a>
           </div>
           <div class="intro__card">
-            <div class="intro__card__item">
-              <img src="./img/intro-1.jpg" alt="house-1-block" />
+            <div
+              data-sal-duration="1200"
+              data-sal="slide-down"
+              data-sal-delay="300"
+              data-sal-easing="ease-out-bounce"
+              class="intro__card__item mr-6"
+            >
+              <img
+                src="./img/intro-1.jpg"
+                alt="house-1-block"
+                loading="eager"
+              />
             </div>
-            <div class="intro__card__item mt-[81px]">
-              <img src="./img/intro-2.jpg" alt="house-1-block" />
+            <div
+              data-sal-duration="1200"
+              data-sal="fade"
+              data-sal-delay="300"
+              data-sal-easing="ease-out-bounce"
+              class="intro__card__item mt-[55px] sm:mt-[81px] mr-6"
+            >
+              <img
+                src="./img/intro-2.jpg"
+                alt="house-1-block"
+                loading="eager"
+              />
             </div>
-            <div class="intro__card__item">
-              <img src="./img/intro-3.jpg" alt="house-1-block" />
+            <div
+              data-sal-duration="1200"
+              data-sal="slide-down"
+              data-sal-delay="300"
+              data-sal-easing="ease-out-bounce"
+              class="intro__card__item"
+            >
+              <img
+                src="./img/intro-3.jpg"
+                alt="house-1-block"
+                loading="eager"
+              />
             </div>
           </div>
         </section>
         <section
           class="about flex flex-wrap xl:flex-nowrap items-center justify-center xl:justify-between min-h-auto xl:min-h-[736px] my-16 xl:m-0"
         >
-          <div class="about__card">
+          <div
+            data-sal-duration="1200"
+            data-sal="slide-right"
+            data-sal-delay="100"
+            data-sal-easing="ease-out-bounce"
+            class="about__card"
+          >
             <img
               class="about__card__img"
+              loading="lazy"
               src="./img/cards-room/cootage-1.jpg"
               alt="cootage"
             />
           </div>
           <div
+            data-sal-duration="1200"
+            data-sal="slide-left"
+            data-sal-delay="100"
+            data-sal-easing="ease-out-bounce"
             class="about__info max-w-[690px] mt-8 xl:mt-0 order-2 xl:order-1"
           >
             <h2 class="about__header header">
@@ -92,7 +156,7 @@
               Cootels extends along a private, quiet, and beautiful nature. Stay
               away from crowd and enjoy the cozy and beauty with us.
             </p>
-            <a class="about__btn btn" href="#learn_more">Learn More</a>
+            <a class="about__btn btn" href="./rooms.html">Learn More</a>
           </div>
         </section>
 
@@ -100,7 +164,12 @@
           class="preferences flex flex-col justify-center w-full min-h-auto xl:min-h-[960px] my-16 xl:m-0"
         >
           <div class="preferences__cards">
-            <div class="preferences__card">
+            <div
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+              class="preferences__card"
+            >
               <div
                 class="preferences__info max-w-[590px] mt-8 xl:mt-0 order-2 lg:order-none"
               >
@@ -116,13 +185,20 @@
                 class="preferences__card__img order-1 lg:order-none"
                 src="./img/cards-room/cabin.jpg"
                 alt="cabin activities"
+                loading="lazy"
               />
             </div>
-            <div class="preferences__card">
+            <div
+              class="preferences__card"
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+            >
               <img
                 class="preferences__card__img"
                 src="./img/cards-room/food.jpg"
                 alt="organic food"
+                loading="lazy"
               />
               <div class="preferences__info max-w-[590px] mt-8 xl:mt-0">
                 <h2 class="preferences__header header">100% Organic Food</h2>
@@ -139,7 +215,12 @@
         <section
           class="rooms flex flex-col justify-center min-h-auto xl:min-h-[1176px] my-16 xl:m-0"
         >
-          <div class="text-center mb-[56px]">
+          <div
+            data-sal-duration="700"
+            data-sal="fade"
+            data-sal-easing="ease-out-bounce"
+            class="text-center mb-[56px]"
+          >
             <h2 class="rooms__header header mb-6">Many Rooms to Choose</h2>
             <p class="rooms__text text text-center max-w-[590px] m-auto">
               There is a room for every needs. We have room for individuals
@@ -148,26 +229,33 @@
             </p>
             <a
               class="rooms__btn btn w-fit max-w-[200px] my-8"
-              href="#learn_more"
+              href="./rooms.html"
               >Explore more</a
             >
           </div>
 
           <div
-            class="rooms__cards flex flex-wrap justify-center lg:justify-start lg:flex-nowrap gap-[24px]"
+            class="rooms__cards flex flex-wrap justify-center lg:justify-start lg:flex-nowrap"
           >
-            <div class="rooms__card">
+            <div
+              class="rooms__card lg:mr-6"
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+              id="single_room"
+            >
               <img
                 class="rooms__card__img"
                 src="./img/cards-room/room-1.jpg"
                 alt="single room"
+                loading="lazy"
               />
               <h3 class="rooms__card__header">Single Room</h3>
               <p class="rooms__card__text text">
                 Best for a brave lone wolf who need comfort and quiet quality
                 time, but you still have a chance to meet others.
               </p>
-              <a class="link" href="#"
+              <a class="link" href="./rooms.html"
                 ><p class="inline-block mr-3">Learn more</p>
                 <svg
                   width="18"
@@ -185,18 +273,25 @@
                 </svg>
               </a>
             </div>
-            <div class="rooms__card">
+            <div
+              class="rooms__card lg:mr-6"
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+              id="double_room"
+            >
               <img
                 class="rooms__card__img"
                 src="./img/cards-room/room-2.jpg"
                 alt="Double room"
+                loading="lazy"
               />
               <h3 class="rooms__card__header">Double Room</h3>
               <p class="rooms__card__text text">
                 Best for couple, seek happiness in intimacy without worry of
                 being disturbed. Feel the whole world just for you two
               </p>
-              <a class="link" href="#"
+              <a class="link" href="./rooms.html"
                 ><p class="inline-block mr-3">Learn more</p>
                 <svg
                   width="18"
@@ -214,18 +309,25 @@
                 </svg>
               </a>
             </div>
-            <div class="rooms__card">
+            <div
+              class="rooms__card"
+              data-sal-duration="700"
+              data-sal="fade"
+              data-sal-easing="ease-out-bounce"
+              id="cootage"
+            >
               <img
                 class="rooms__card__img"
                 src="./img/cards-room/room-3.jpg"
                 alt="Cootage"
+                loading="lazy"
               />
               <h3 class="rooms__card__header">Cootage</h3>
               <p class="rooms__card__text text">
                 Best for family or group. One cootage can fit up to 5 people.
                 Made stronger bond with your family or friends
               </p>
-              <a class="link" href="#"
+              <a class="link" href="./rooms.html"
                 ><p class="inline-block mr-3">Learn more</p>
                 <svg
                   width="18"
@@ -250,6 +352,9 @@
           class="answers flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center lg:min-h-[596px]"
         >
           <div
+            data-sal-duration="1000"
+            data-sal="slide-up"
+            data-sal-easing="ease-out-bounce"
             class="answers__info sm:max-w-[75%] lg:max-w-[410px] sm:mr-4 mb-8 sm:mb-20 lg:mb-0"
           >
             <span
@@ -264,16 +369,16 @@
               button below and it will take you to our contact point
             </p>
             <div class="answers__info__links">
-              <a href="#" class="btn">Contact us</a>
+              <a href="#contact__us" class="btn btn-info-room">Contact us</a>
               <a
-                href="#"
-                class="btn bg-transparent hover:bg-dark-blue-bg hover:text-white hover:border-0 text-dark-blue-bg"
+                href="./rooms.html"
+                class="btn btn-info-room bg-transparent hover:bg-dark-blue-bg hover:text-white hover:border-0 text-dark-blue-bg"
                 >Explore more room</a
               >
             </div>
           </div>
           <div
-            class="answers__tabs flex flex-col max-w-[590px] w-full shadow-2xl"
+            class="answers__tabs flex flex-col max-w-[590px] w-full shadow-2xl p-2 rounded-xl sm:rounded-none"
           >
             <div class="answers__tab mb-4 sm:mb-0">
               <button
@@ -350,14 +455,19 @@
           </div>
         </section>
 
-        <section [class="responde__slider">
+        <section
+          data-sal-duration="1000"
+          data-sal="slide-up"
+          data-sal-easing="ease-out-bounce"
+          class="responde__slider"
+        >
           <div
             class="responde__slider___wrapper flex justify-center items-center text-center"
           >
             <div class="swiper flex h-full">
               <!-- Additional required wrapper -->
               <div
-                class="swiper-wrapper flex h-full xl:min-h-[627px] flex items-center my-16 lg:my-0"
+                class="swiper-wrapper flex h-full xl:min-h-[627px] flex items-center my-16 sm:mb-4 sm:mt-16 xl:my-0"
               >
                 <!-- Slides -->
                 <div class="swiper-slide sm:mb-[36px] lg:mb-0">
@@ -374,6 +484,7 @@
                         class="mb-11"
                         src="./img/response-card/woman-1.jpg"
                         alt="Kirana Dunham"
+                        loading="lazy"
                       />
                       <article>
                         <p class="text mb-[40px]">
@@ -404,6 +515,7 @@
                         class="mb-11"
                         src="./img/response-card/man-1.png"
                         alt="Kristian Walley"
+                        loading="lazy"
                       />
                       <article>
                         <p class="text mb-[40px]">
@@ -434,6 +546,7 @@
                         class="mb-11"
                         src="./img/response-card/man-2.png"
                         alt="Paul Robertson"
+                        loading="lazy"
                       />
                       <article>
                         <p class="text mb-[40px]">
@@ -461,9 +574,10 @@
                       class="responde__slider__article flex flex-col justify-center items-center"
                     >
                       <img
-                        class="mb-11"
-                        src="./img/response-card/woman-1.jpg"
-                        alt="Kirana Dunham"
+                        class="mb-11 w-[120px] h-[120px] object-cover aspect-square rounded-[50%]"
+                        src="./img/response-card/woman-2.jpg"
+                        alt="Anna Poarch"
+                        loading="lazy"
                       />
                       <article>
                         <p class="text mb-[40px]">
@@ -474,7 +588,7 @@
                           great!”
                         </p>
                         <span class="text-dark-blue font-medium text-md"
-                          >Kirana Dunham</span
+                          >Anna Poarch</span
                         >
                       </article>
                     </div>
@@ -500,8 +614,12 @@
           <p class="text lg:max-w-[190px]">
             Your Best Private Hideway From Crowd. Back to Nature.
           </p>
-          <div class="footer__social flex items-center gap-6 mt-10">
-            <a href="#" class="footer__social__item">
+          <div class="footer__social flex items-center mt-10">
+            <a
+              target="_blank"
+              href="https://twitter.com"
+              class="footer__social__item mr-6"
+            >
               <svg
                 width="32"
                 height="26"
@@ -514,7 +632,11 @@
                 />
               </svg>
             </a>
-            <a href="#" class="footer__social__item">
+            <a
+              target="_blank"
+              href="https://instagram.com"
+              class="footer__social__item mr-6"
+            >
               <svg
                 width="32"
                 height="32"
@@ -533,7 +655,11 @@
                 />
               </svg>
             </a>
-            <a href="#" class="footer__social__item">
+            <a
+              target="_blank"
+              href="https://facebook.com"
+              class="footer__social__item"
+            >
               <svg
                 width="17"
                 height="32"
@@ -554,16 +680,16 @@
           <nav class="my-3 sm:m-0 w-full sm:w-auto">
             <h3 class="footer__nav__title">Rooms</h3>
             <ul>
-              <a href="#">
+              <a href="#single_room">
                 <li class="my-6">Single Room</li>
               </a>
-              <a href="#">
+              <a href="#double_room">
                 <li class="my-6">Double Room</li>
               </a>
-              <a href="#">
+              <a href="./rooms.html">
                 <li class="my-6">Cabin</li>
               </a>
-              <a href="#">
+              <a href="./rooms.html">
                 <li class="my-6">Custom Room</li>
               </a>
             </ul>
@@ -571,24 +697,27 @@
           <nav class="my-3 sm:m-0 w-full sm:w-auto">
             <h3 class="footer__nav__title">Reservation</h3>
             <ul>
-              <a href="#">
+              <a href="./reservation.html">
                 <li class="my-6">See the Steps</li>
               </a>
-              <a href="#">
+              <a href="./reservation.html">
                 <li class="my-6">Best Time</li>
               </a>
             </ul>
           </nav>
-          <nav class="my-3 sm:m-0 w-full sm:w-auto">
+          <nav class="my-3 sm:m-0 w-full sm:w-auto" id="contact__us">
             <h3 class="footer__nav__title">Contact</h3>
             <ul>
-              <a href="#">
+              <a href="tel:+79876543210">
                 <li class="my-6">Our Number</li>
               </a>
-              <a href="#">
+              <a href="mailto:cootels@gmail.com">
                 <li class="my-6">Our Email</li>
               </a>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/@34.7473225,-92.3515193,17.06z"
+              >
                 <li class="my-6">Our Location</li>
               </a>
             </ul>
@@ -603,6 +732,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./scripts/script.js"></script>
+    <script src="sal/sal.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/animation.js"></script>
   </body>
 </html>

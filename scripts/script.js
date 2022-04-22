@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  speed: 300,
+  speed: 800,
   autoplay: true,
   loop: true,
 
@@ -24,3 +24,23 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// links scroll
+const anchors = document.querySelectorAll('a[href*="#"]');
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute("href").substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
+// loader
+window.onload = function () {
+  $(".loader").addClass("remove");
+};
